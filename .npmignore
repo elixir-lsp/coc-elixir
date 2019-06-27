@@ -6,4 +6,5 @@ src
 .prettierrc.yml
 babel.config.js
 webpack.config.js
+elixir-ls
 
