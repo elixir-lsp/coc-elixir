@@ -11,6 +11,9 @@
   "engines": {
     "coc": "^0.0.4"
   },
+  "activationEvents": [
+    "onLanguage:elixir"
+  ],
   "author": "",
   "license": "MIT",
   "dependencies": {},
