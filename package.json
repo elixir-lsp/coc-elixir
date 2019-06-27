@@ -9,7 +9,7 @@
     "elixir",
     "lsp"
   ],
-  "homepage": "https://github.com/amiralies/coc-elixir",
+  "homepage": "https://github.com/amiralies/coc-elixir#readme",
   "scripts": {
     "clean": "rm -rf lib/",
     "build": "webpack",
