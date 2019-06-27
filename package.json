@@ -8,6 +8,7 @@
     "build": "webpack",
     "prepack": "npm run clean && npm run build"
   },
+  "repository": "github:amiralies/coc-elixir",
   "engines": {
     "coc": "^0.0.4"
   },
