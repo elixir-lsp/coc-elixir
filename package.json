@@ -9,6 +9,7 @@
     "elixir",
     "lsp"
   ],
+  "homepage": "https://github.com/amiralies/coc-elixir",
   "scripts": {
     "clean": "rm -rf lib/",
     "build": "webpack",
@@ -21,7 +22,10 @@
   "activationEvents": [
     "onLanguage:elixir"
   ],
-  "author": "",
+  "author": {
+    "name": "Amirali Esmaeili",
+    "email": "esmailiamirali@gmail.com"
+  },
   "license": "MIT",
   "dependencies": {},
   "devDependencies": {
