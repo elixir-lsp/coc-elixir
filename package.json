@@ -11,11 +11,17 @@
   "license": "MIT",
   "dependencies": {},
   "devDependencies": {
+    "@babel/core": "^7.4.5",
+    "@babel/preset-env": "^7.4.5",
+    "@babel/preset-flow": "^7.0.0",
     "babel-eslint": "^10.0.2",
+    "babel-loader": "^8.0.6",
     "coc.nvim": "^0.0.71",
     "eslint": "^5.3.0",
     "eslint-config-airbnb-base": "^13.1.0",
     "eslint-plugin-import": "^2.18.0",
-    "flow-bin": "^0.102.0"
+    "flow-bin": "^0.102.0",
+    "webpack": "^4.35.0",
+    "webpack-cli": "^3.3.5"
   }
 }
