@@ -1,12 +1,11 @@
 // @flow
 
-import { LanguageClient, workspace, services, ExtensionContext } from 'coc.nvim';
+import { LanguageClient, services, ExtensionContext } from 'coc.nvim';
 
 exports.activate = (context: ExtensionContext) => {
-  const config: Object = workspace.getConfiguration().get('elixir', {});
-
+  const command = context.asAbsolutePath('./els-release/language_server.sh');
   const serverOptions = {
-    command: config.pathToEls,
+    command,
   };
 
   const clientOptions = {
