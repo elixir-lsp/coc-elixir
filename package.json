@@ -3,7 +3,11 @@
   "version": "0.1.0",
   "description": "coc.nvim elixir extension",
   "main": "lib/index.js",
-  "scripts": {},
+  "scripts": {
+    "clean": "rm -rf lib/",
+    "build": "webpack",
+    "prepack": "npm run clean && npm run build"
+  },
   "engines": {
     "coc": "^0.0.4"
   },
