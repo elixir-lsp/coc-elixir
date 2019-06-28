@@ -23,6 +23,17 @@
   "activationEvents": [
     "onLanguage:elixir"
   ],
+  "configuration": {
+    "type": "object",
+    "title": "Elixir Config",
+    "properties": {
+      "elixir.enable": {
+        "type": "boolean",
+        "default": true,
+        "description": "Enable elixir extension"
+      }
+    }
+  },
   "author": {
     "name": "Amirali Esmaeili",
     "email": "esmailiamirali@gmail.com"
