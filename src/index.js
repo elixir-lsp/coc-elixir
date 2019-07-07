@@ -9,7 +9,16 @@ exports.activate = (context: ExtensionContext) => {
     return;
   }
 
-  const command = context.asAbsolutePath('./els-release/language_server.sh');
+  const getElsPath = () => {
+    const { pathToElixirLS } = config;
+    if (pathToElixirLS && pathToElixirLS.length > 0) {
+      return pathToElixirLS;
+    }
+
+    return context.asAbsolutePath('./els-release/language_server.sh');
+  };
+
+  const command = getElsPath();
   const serverOptions = {
     command,
   };

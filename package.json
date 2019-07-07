@@ -32,6 +32,11 @@
           "type": "boolean",
           "default": true,
           "description": "Enable elixir extension"
+        },
+        "elixir.pathToElixirLS": {
+          "type": "string",
+          "default": "",
+          "description": "Custom path for elixirLS, use this options if you don't want use bundled elixirLS"
         }
       }
     }
