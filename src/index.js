@@ -25,7 +25,10 @@ exports.activate = (context: ExtensionContext) => {
 
   const clientOptions = {
     documentSelector: [{ language: 'elixir', scheme: 'file' }, { language: 'elixir', scheme: 'untitled' }],
-    synchronize: { configurationSection: 'elixirLS', fileEvents: [ workspace.createFileSystemWatcher('**/*.{ex,exs,erl,yrl,xrl,eex}') ] }
+    synchronize: {
+      configurationSection: 'elixirLS',
+      fileEvents: [workspace.createFileSystemWatcher('**/*.{ex,exs,erl,yrl,xrl,eex}')],
+    },
   };
 
   const languageClient = new LanguageClient('elixir', 'elixir', serverOptions, clientOptions);
