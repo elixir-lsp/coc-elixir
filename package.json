@@ -12,6 +12,7 @@
   "homepage": "https://github.com/amiralies/coc-elixir#readme",
   "scripts": {
     "clean": "rm -rf lib/",
+    "lint": "eslint src/",
     "build": "webpack",
     "els-build": "cd elixir-ls && mix deps.get && mix elixir_ls.release -o ../els-release",
     "prepack": "npm run clean && npm run build && npm run els-build"
