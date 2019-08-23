@@ -2,7 +2,6 @@ extends: airbnb-base
 parser: babel-eslint
 
 rules:
-    import/no-extraneous-dependencies: "off"
-    object-curly-newline: "off"
-    max-len: ["error", 120]
-
+  import/no-extraneous-dependencies: 'off'
+  object-curly-newline: 'off'
+  max-len: ['error', 120]
