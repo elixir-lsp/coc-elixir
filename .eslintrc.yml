@@ -3,5 +3,6 @@ parser: babel-eslint
 
 rules:
   import/no-extraneous-dependencies: 'off'
+  import/prefer-default-export: 'off'
   object-curly-newline: 'off'
   max-len: ['error', 120]

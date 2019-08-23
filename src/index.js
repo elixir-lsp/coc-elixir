@@ -2,7 +2,7 @@
 
 import { LanguageClient, services, ExtensionContext, workspace } from 'coc.nvim';
 
-exports.activate = (context: ExtensionContext) => {
+export function activate(context: ExtensionContext) {
   const config = workspace.getConfiguration().get('elixir', {});
 
   if (config.enable === false) {
@@ -34,4 +34,4 @@ exports.activate = (context: ExtensionContext) => {
   const languageClient = new LanguageClient('elixir', 'elixir', serverOptions, clientOptions);
 
   context.subscriptions.push(services.registLanguageClient(languageClient));
-};
+}
