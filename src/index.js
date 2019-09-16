@@ -1,6 +1,7 @@
 // @flow
 
 import { LanguageClient, services, ExtensionContext, workspace } from 'coc.nvim';
+import os from 'os';
 
 export function activate(context: ExtensionContext) {
   const config = workspace.getConfiguration().get('elixir', {});
@@ -15,7 +16,8 @@ export function activate(context: ExtensionContext) {
       return pathToElixirLS;
     }
 
-    return context.asAbsolutePath('./els-release/language_server.sh');
+    const lsFileExtension = os.platform() === 'win32' ? 'bat' : 'sh';
+    return context.asAbsolutePath(`./els-release/language_server.${lsFileExtension}`);
   };
 
   const command = getElsPath();
