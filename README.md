@@ -1,6 +1,6 @@
 # coc-elixir
 
-Elixir language server extension based on [elixir-ls](https://github.com/JakeBecker/elixir-ls) for [`coc.nvim`](https://github.com/neoclide/coc.nvim).
+Elixir language server extension based on [elixir-ls](https://github.com/elixir-lsp/elixir-ls) for [`coc.nvim`](https://github.com/neoclide/coc.nvim).
 
 ## Install
 
@@ -24,12 +24,12 @@ Elixir language server extension based on [elixir-ls](https://github.com/JakeBec
 
 ### Server fails to start
 
-If, for some reason, the language server fails to start, you can try doing a manual installation of [ElixirLS](https://github.com/JakeBecker/elixir-ls) to fix the problem.
+If, for some reason, the language server fails to start, you can try doing a manual installation of [ElixirLS](https://github.com/elixir-lsp/elixir-ls) to fix the problem.
 
 Start by building a binary of ElixirLS from its source:
 
 ```
-git clone https://github.com/JakeBecker/elixir-ls.git ~/.elixir-ls
+git clone https://github.com/elixir-lsp/elixir-ls.git ~/.elixir-ls
 cd ~/.elixir-ls
 mix deps.get && mix compile && mix elixir_ls.release -o release
 ```
