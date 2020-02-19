@@ -25,6 +25,15 @@
     "onLanguage:elixir"
   ],
   "contributes": {
+    "rootPatterns": [
+      {
+        "filetype": "elixir",
+        "patterns": [
+          "mix.lock",
+          "mix.exs"
+        ]
+      }
+    ],
     "configuration": {
       "type": "object",
       "title": "Elixir Config",
