@@ -4,12 +4,24 @@ Elixir language server extension based on [elixir-ls](https://github.com/elixir-
 
 ## Install
 
+### CocInstall
+
 1. Make sure you've got `elixir` and `mix` available in `$PATH`.
 
 2. Inside (neo)vim run this command:
 
 ```
 :CocInstall coc-elixir
+```
+
+### vim-plug
+
+1. Make sure you've got `elixir`, `mix` and `yarn` available in `$PATH`.
+
+2. Inside your `plug#begin/end` block in your `.vimrc` (vim) or `init.vim` (neovim) file, after `coc.nvim` add:
+
+```
+Plug 'amiralies/coc-elixir', {'do': 'yarn install --frozen-lockfile && yarn run build'}
 ```
 
 ## Features
