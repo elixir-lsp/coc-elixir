@@ -48,6 +48,16 @@
           "default": "",
           "description": "Custom path for elixirLS, use this options if you don't want use bundled elixirLS"
         },
+        "elixir.trace.server": {
+          "type": "string",
+          "enum": [
+            "off",
+            "messages",
+            "verbose"
+          ],
+          "default": "off",
+          "description": "Traces the communication between VS Code and the Elixir language server."
+        },
         "elixirLS.dialyzerEnabled": {
           "type": "boolean",
           "default": true,
