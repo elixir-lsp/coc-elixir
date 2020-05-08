@@ -29,7 +29,7 @@ export function activate(context: ExtensionContext) {
     documentSelector: [{ language: 'elixir', scheme: 'file' }, { language: 'elixir', scheme: 'untitled' }],
     synchronize: {
       configurationSection: 'elixirLS',
-      fileEvents: [workspace.createFileSystemWatcher('**/*.{ex,exs,erl,yrl,xrl,eex}')],
+      fileEvents: [workspace.createFileSystemWatcher('**/*.{ex,exs,erl,yrl,xrl,eex,leex}')],
     },
   };
 
