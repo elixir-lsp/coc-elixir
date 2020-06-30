@@ -36,7 +36,12 @@ Plug 'amiralies/coc-elixir', {'do': 'yarn install && yarn prepack'}
 
 ### Server fails to start
 
-If, for some reason, the language server fails to start, you can try doing a manual installation of [ElixirLS](https://github.com/elixir-lsp/elixir-ls) to fix the problem.
+Upon upgrading `coc-elixir` it is possible that the binary files were compiled
+using an OTP or Elixir version that differ from the ones you have installed.
+When this happens, the language server will fail to start.
+
+You can build [ElixirLS](https://github.com/elixir-lsp/elixir-ls) yourself to
+solve this:
 
 Start by building a binary of ElixirLS from its source:
 
@@ -46,12 +51,18 @@ cd ~/.elixir-ls
 mix deps.get && mix compile && mix elixir_ls.release -o release
 ```
 
-Afterwards, create or update your ~/.vim/coc-settings.json file and add this line:
+Afterwards, create or update your coc-settings file and add this line:
 
 ```json
 {
   "elixir.pathToElixirLS": "~/.elixir-ls/release/language_server.sh"
 }
+```
+
+To open your coc-settings file directly from Vim or Nvim, you can use this command:
+
+```
+:CocConfig
 ```
 
 Doing these steps should make this plugin work with [CoC](https://github.com/neoclide/coc.nvim).
