@@ -35,7 +35,7 @@ Plug 'amiralies/coc-elixir', {'do': 'yarn install && yarn prepack'}
 ## Dialayzer integration
 Coc-elixir will automatically analyze your project with [Dialyzer](http://erlang.org/doc/apps/dialyzer/dialyzer_chapter.html) after each successful build. It maintains a "manifest" file in `.elixir_ls/dialyzer_manifest` that stores the results of the analysis.
 
-You can control which warnings are shown using the `elixirLS.dialyzerWarnOpts` setting in `coc-setting.json`, found at `~/config/nvim/coc-settings.json`, or use command `:CocConfig` to open configuration file.
+You can control which warnings are shown using the `elixirLS.dialyzerWarnOpts` setting in `coc-setting.json`, found at `~/.config/nvim/coc-settings.json`, or use command `:CocConfig` to open configuration file.
 You can find available options in Erlang [docs](http://erlang.org/doc/man/dialyzer.html) at section "Warning options".
 
 To disable Dialyzer completely add setting:
