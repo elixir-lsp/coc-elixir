@@ -107,6 +107,12 @@
           "default": "test",
           "minLength": 1
         },
+        "elixirLS.mixTarget": {
+          "type": "string",
+          "description": "Mix target to use for compilation",
+          "default": "host",
+          "minLength": 1
+        },
         "elixirLS.projectDir": {
           "type": "string",
           "description": "Subdirectory containing Mix project if not in the project root",

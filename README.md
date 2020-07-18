@@ -32,7 +32,7 @@ Plug 'amiralies/coc-elixir', {'do': 'yarn install && yarn prepack'}
 - Smart closing of code blocks
 - Code formatter
 
-## Dialayzer integration
+## Dialyzer integration
 Coc-elixir will automatically analyze your project with [Dialyzer](http://erlang.org/doc/apps/dialyzer/dialyzer_chapter.html) after each successful build. It maintains a "manifest" file in `.elixir_ls/dialyzer_manifest` that stores the results of the analysis.
 
 You can control which warnings are shown using the `elixirLS.dialyzerWarnOpts` setting in `coc-setting.json`, found at `~/.config/nvim/coc-settings.json`, or use command `:CocConfig` to open configuration file.
@@ -45,6 +45,18 @@ To disable Dialyzer completely add setting:
 }
 ```
 You can also set the module attribute @dialyzer to show or hide warnings at a module or function level.
+
+## Mix environment and target settings
+
+You can control the settings that ElixirLS uses for Mix environment and target using either the user `coc-settings.json` or a [workspace configuration](https://github.com/neoclide/coc.nvim/wiki/Using-the-configuration-file#configuration-file-resolve).
+
+To change the Mix environment and target, add the settings:
+```json
+{
+  "elixirLS.mixEnv": "dev",
+  "elixirLS.mixTarget": "test"
+}
+```
 
 ## Troubleshooting
 
