@@ -21,7 +21,7 @@ Elixir language server extension based on [elixir-ls](https://github.com/elixir-
 2. Inside your `plug#begin/end` block in your `.vimrc` (vim) or `init.vim` (neovim) file, after `coc.nvim` add:
 
 ```
-Plug 'amiralies/coc-elixir', {'do': 'yarn install && yarn prepack'}
+Plug 'elixir-lsp/coc-elixir', {'do': 'yarn install && yarn prepack'}
 ```
 
 ## Features
