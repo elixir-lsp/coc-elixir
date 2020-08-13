@@ -2,6 +2,12 @@
 
 Elixir language server extension based on [elixir-ls](https://github.com/elixir-lsp/elixir-ls) for [`coc.nvim`](https://github.com/neoclide/coc.nvim).
 
+## Requirements
+
+Install [asdf](https://github.com/asdf-vm/asdf) together with [asdf-erlang](https://github.com/asdf-vm/asdf-erlang) and [asdf-elixir](https://github.com/asdf-vm/asdf-elixir) plugins.
+
+These are needed to compile elixir-ls properly.
+
 ## Install
 
 ### CocInstall
@@ -25,6 +31,7 @@ Plug 'elixir-lsp/coc-elixir', {'do': 'yarn install && yarn prepack'}
 ```
 
 ## Features
+
 - Go to definition support
 - Code completion
 - Inline diagnostic (Build errors and warning)
@@ -33,17 +40,20 @@ Plug 'elixir-lsp/coc-elixir', {'do': 'yarn install && yarn prepack'}
 - Code formatter
 
 ## Dialyzer integration
+
 Coc-elixir will automatically analyze your project with [Dialyzer](http://erlang.org/doc/apps/dialyzer/dialyzer_chapter.html) after each successful build. It maintains a "manifest" file in `.elixir_ls/dialyzer_manifest` that stores the results of the analysis.
 
 You can control which warnings are shown using the `elixirLS.dialyzerWarnOpts` setting in `coc-setting.json`, found at `~/.config/nvim/coc-settings.json`, or use command `:CocConfig` to open configuration file.
 You can find available options in Erlang [docs](http://erlang.org/doc/man/dialyzer.html) at section "Warning options".
 
 To disable Dialyzer completely add setting:
+
 ```json
 {
   "elixirLS.dialyzerEnabled": false
 }
 ```
+
 You can also set the module attribute @dialyzer to show or hide warnings at a module or function level.
 
 ## Mix environment and target settings
@@ -51,6 +61,7 @@ You can also set the module attribute @dialyzer to show or hide warnings at a mo
 You can control the settings that ElixirLS uses for Mix environment and target using either the user `coc-settings.json` or a [workspace configuration](https://github.com/neoclide/coc.nvim/wiki/Using-the-configuration-file#configuration-file-resolve).
 
 To change the Mix environment and target, add the settings:
+
 ```json
 {
   "elixirLS.mixEnv": "dev",
@@ -96,4 +107,3 @@ Doing these steps should make this plugin work with [CoC](https://github.com/neo
 ## License
 
 MIT
-
