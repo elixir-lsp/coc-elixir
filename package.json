@@ -14,7 +14,7 @@
     "clean": "rm -rf lib/",
     "lint": "eslint .",
     "build": "webpack",
-    "els-build": "cd elixir-ls && mix deps.get && mix elixir_ls.release -o ../els-release",
+    "els-build": "cd elixir-ls && asdf install && mix deps.get && mix elixir_ls.release -o ../els-release",
     "prepack": "npm run clean && npm run build && npm run els-build"
   },
   "repository": "github:amiralies/coc-elixir",
