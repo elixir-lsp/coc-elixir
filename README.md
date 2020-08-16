@@ -93,6 +93,10 @@ To open your coc-settings file directly from Vim or Nvim, you can use this comma
 
 Doing these steps should make this plugin work with [CoC](https://github.com/neoclide/coc.nvim).
 
+### coc-elixir is installed correctly but doesn't work
+
+Make sure `filetype` is set to `elixir`, or install [vim-elixir](https://github.com/elixir-editors/vim-elixir) which sets up file extension associations and syntax highlighting.
+
 ## License
 
 MIT
