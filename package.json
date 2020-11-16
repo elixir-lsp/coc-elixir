@@ -1,6 +1,6 @@
 {
   "name": "coc-elixir",
-  "version": "0.6.0",
+  "version": "0.6.1",
   "description": "coc.nvim elixir extension",
   "main": "lib/index.js",
   "keywords": [
