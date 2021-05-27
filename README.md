@@ -23,6 +23,7 @@ Elixir language server extension based on [elixir-ls](https://github.com/elixir-
 ```
 Plug 'elixir-lsp/coc-elixir', {'do': 'yarn install && yarn prepack'}
 ```
+3. Get the latest elixir-ls release from [here](https://github.com/elixir-lsp/elixir-ls/releases/tag/v0.7.0) and unzip it into `~/.vim/plugged/coc-elixir/els-release` (`unzip elixir-ls.zip -d ~/.vim/plugged/coc-elixir/els-release`).
 
 ## Features
 - Go to definition support
